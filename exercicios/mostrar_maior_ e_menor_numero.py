@@ -1,8 +1,10 @@
-"""Opção 1 usando variáveis
+"""
+Opção 1 usando variáveis
 num1 = int(input('Digite o primeiro numero: '))
 num2 = int(input('Digite o segundo numero: '))
 num3 = int(input('Digite o terceiro numero: '))
-lista = [num1, num2, num3]"""
+lista = [num1, num2, num3]
+"""
 # Opção 2 sem o uso de variáveis
 lista = [int(input('Digite o primeiro numero: ')),
          int(input('Digite o segundo numero: ')),

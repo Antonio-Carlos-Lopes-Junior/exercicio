@@ -1,5 +1,6 @@
 def contar_caracteres(s):
-    """Função que conta os caracteres de uma string
+    """
+    Função que conta os caracteres de uma string
 
     Ex:
 
@@ -11,7 +12,8 @@ def contar_caracteres(s):
     :param s:
     :return:
     """
-    """Método ordenando e contando
+    """
+    Método ordenando e contando
     caracteres_ordenados = sorted(s)
     caracter_anterior = caracteres_ordenados[0]
     contagem = 1
@@ -26,15 +28,18 @@ def contar_caracteres(s):
             caracter_anterior = caracter
             contagem = 1
 
-    resultado[caracter_anterior] = contagem"""
+    resultado[caracter_anterior] = contagem
+    """
 
     resultado = {}
 
     for caracter in s:
-        """Método com contador
+        """
+        Método com contador
         contagem = resultado.get(caracter, 0)
         contagem += 1
-        resultado[caracter] = contagem"""
+        resultado[caracter] = contagem
+        """
         #método mais limpo
         resultado[caracter] = resultado.get(caracter,0) + 1
 

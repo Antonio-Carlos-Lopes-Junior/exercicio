@@ -1,5 +1,6 @@
 def contar_caracteres(s):
-    """Função que conta os caracteres de uma string
+    """
+    Função que conta os caracteres de uma string
 
     Ex:
 
