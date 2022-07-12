@@ -8,5 +8,5 @@ lista = [int(input('Digite o primeiro numero: ')),
          int(input('Digite o segundo numero: ')),
          int(input('Digite o terceiro numero: '))]
 lista_ordenada = sorted(lista)
-print(f'O maior numero e: {lista_ordenada[len(lista_ordenada)-1]}')
-print(f'O menor numero e: {lista_ordenada[0]}')
+print(f'O maior numero é: {lista_ordenada[len(lista_ordenada)-1]}')
+print(f'O menor numero é: {lista_ordenada[0]}')
