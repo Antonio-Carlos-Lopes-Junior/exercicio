@@ -3,7 +3,7 @@ Faça um Programa que verifique se uma letra digitada é vogal ou consoante.
 """
 from unidecode import unidecode
 
-letra = str(input('Digite uma letra: '))
+letra = input('Digite uma letra: ')
 vogal = ('a', 'e', 'i', 'o', 'u')
 if letra == '':
     print('Você não digitou nada.')
