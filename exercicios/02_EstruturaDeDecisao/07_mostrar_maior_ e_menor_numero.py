@@ -10,9 +10,9 @@ lista = [num1, num2, num3]
 """
 # Opção 2 sem o uso de variáveis
 try:
-    lista = [int(input('Digite o primeiro numero: ')),
-         int(input('Digite o segundo numero: ')),
-         int(input('Digite o terceiro numero: '))]
+    lista = {int(input('Digite o primeiro numero: ')),
+             int(input('Digite o segundo numero: ')),
+             int(input('Digite o terceiro numero: '))}
 except ValueError:
     print('Você não digitou um número em algum momento.')
 else:
