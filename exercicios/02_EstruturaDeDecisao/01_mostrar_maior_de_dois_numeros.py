@@ -3,7 +3,7 @@ Faça um Programa que peça dois números e imprima o maior deles.
 """
 try:
     lista = [int(input('Digite o primeiro número: ')),
-         int(input('Digite o segundo número: '))]
+             int(input('Digite o segundo número: '))]
 except ValueError:
     print('Você não digitou um número em algum momento.')
 else:

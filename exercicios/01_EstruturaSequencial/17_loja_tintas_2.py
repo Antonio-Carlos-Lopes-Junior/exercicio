@@ -10,24 +10,28 @@ sempre arredonde os valores para cima, isto é, considere latas cheias.
 """
 import math
 
-area = float(input('Qual a área a ser pintada: '))
-area_com_folga = area * 1.1
-litro_por_metro = 6
-litro_por_lata = 18
-litro_por_galao = 3.6
-valor_da_lata = 80
-valor_do_galao = 25
-tinta = area_com_folga / litro_por_metro
-lata = math.ceil(tinta / litro_por_lata)
-preco_lata = lata * valor_da_lata
-galao = math.ceil(tinta / litro_por_galao)
-preco_galao = galao * valor_do_galao
-print(f'Você deverá comprar {lata} lata(s) de 18 litros no valor total de R$ {preco_lata:.2f}')
-print(f'Você deverá comprar {galao} galão(ões) de 3,6 litros no valor total de R$ {preco_galao:.2f}')
-lata = math.floor(tinta / litro_por_lata)
-litro_restante = tinta % litro_por_lata
-galao = math.ceil(litro_restante / litro_por_galao)
-preco_combinado = lata * valor_da_lata + galao * valor_do_galao
-print(f'Você deverá comprar {lata} lata(s) de 18 litros '
-      f'mais {galao} galão(ões) de 3,6 litros '
-      f'no valor total de R$ {preco_combinado:.2f}')
+try:
+      area = float(input('Qual a área a ser pintada: '))
+except ValueError:
+    print('Você não digitou um número.')
+else:
+      area_com_folga = area * 1.1
+      litro_por_metro = 6
+      litro_por_lata = 18
+      litro_por_galao = 3.6
+      valor_da_lata = 80
+      valor_do_galao = 25
+      tinta = area_com_folga / litro_por_metro
+      lata = math.ceil(tinta / litro_por_lata)
+      preco_lata = lata * valor_da_lata
+      galao = math.ceil(tinta / litro_por_galao)
+      preco_galao = galao * valor_do_galao
+      print(f'Você deverá comprar {lata} lata(s) de 18 litros no valor total de R$ {preco_lata:.2f}')
+      print(f'Você deverá comprar {galao} galão(ões) de 3,6 litros no valor total de R$ {preco_galao:.2f}')
+      lata = math.floor(tinta / litro_por_lata)
+      litro_restante = tinta % litro_por_lata
+      galao = math.ceil(litro_restante / litro_por_galao)
+      preco_combinado = lata * valor_da_lata + galao * valor_do_galao
+      print(f'Você deverá comprar {lata} lata(s) de 18 litros '
+            f'mais {galao} galão(ões) de 3,6 litros '
+            f'no valor total de R$ {preco_combinado:.2f}')

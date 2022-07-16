@@ -5,12 +5,15 @@ a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 3 metr
 a serem compradas e o preço total.
 """
 import math
-
-area = float(input('Qual a área a ser pintada: '))
-litro_por_metro = 3
-litro_por_lata = 18
-valor_da_lata = 80
-tinta = area / litro_por_metro
-lata = math.ceil(tinta / litro_por_lata)
-preco = lata * valor_da_lata
-print(f'Você deverá comprar {lata} lata(s) no valor total de R$ {preco:.2f}')
+try:
+    area = float(input('Qual a área a ser pintada: '))
+except ValueError:
+    print('Você não digitou um número.')
+else:
+    litro_por_metro = 3
+    litro_por_lata = 18
+    valor_da_lata = 80
+    tinta = area / litro_por_metro
+    lata = math.ceil(tinta / litro_por_lata)
+    preco = lata * valor_da_lata
+    print(f'Você deverá comprar {lata} lata(s) no valor total de R$ {preco:.2f}')

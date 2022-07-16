@@ -3,6 +3,10 @@ Faça um Programa que peça a temperatura em graus Fahrenheit, transforme e most
 em graus Celsius.
 C = 5 * ((F-32) / 9).
 """
-fahrenheit = float(input('Digite a temperatura em Fahrenheit: '))
-celsius = 5 * ((fahrenheit - 32) / 9)
-print(f'A temperatura em Celsius é {celsius:.2f}.')
+try:
+    fahrenheit = float(input('Digite a temperatura em Fahrenheit: '))
+except ValueError:
+    print('Você não digitou um número.')
+else:
+    celsius = 5 * ((fahrenheit - 32) / 9)
+    print(f'A temperatura em Celsius é {celsius:.2f}.')
