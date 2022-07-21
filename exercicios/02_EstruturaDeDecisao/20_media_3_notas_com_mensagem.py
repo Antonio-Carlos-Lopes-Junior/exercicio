@@ -12,11 +12,14 @@ try:
 except ValueError:
     print('Você não digitou um número em algum momento.')
 else:
-    media = (nota1 + nota2 + nota3) / 3
-    print(f'sua média foi {media}.')
-    if media >= 10:
-        print('Aprovado com Distinção')
-    elif media >= 7:
-        print('Aprovado')
+    if nota1 < 0 or nota2 < 0 or nota3 < 0:
+        print('Você digitou nota negativa em algum momento. ')
     else:
-        print('Reprovado')
+        media = (nota1 + nota2 + nota3) / 3
+        print(f'sua média foi {media:.1f}.')
+        if media >= 10:
+            print('Aprovado com Distinção')
+        elif media >= 7:
+            print('Aprovado')
+        else:
+            print('Reprovado')
