@@ -21,7 +21,6 @@ else:
         print('O saque será de:')
 
         saque_100_int, saque = divmod(saque, 100)
-        saque_100_int, saque = divmod(saque, 100)
         saque_50_int, saque = divmod(saque, 50)
         saque_10_int, saque = divmod(saque, 10)
         saque_5_int, saque_1_int = divmod(saque, 5)
