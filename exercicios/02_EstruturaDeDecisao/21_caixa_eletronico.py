@@ -11,7 +11,7 @@ de 10, uma nota de 5 e quatro notas de 1.
 try:
     saque = int(input('Digite quanto quer sacar.(limite entre R$ 10,00 e R$ 600,00): '))
 except ValueError:
-    print('Você não digitou um número em algum momento.')
+    print('Você não digitou um número.')
 else:
     saque_100_str = saque_50_str = saque_10_str = saque_5_str = saque_1_str = ''
     partes_numericas = 0
