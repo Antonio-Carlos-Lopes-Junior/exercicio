@@ -5,7 +5,7 @@ O valor mínimo é de 10 reais e o máximo de 600 reais. O programa não deve se
 existentes na máquina.
 Exemplo 1: Para sacar a quantia de 256 reais, o programa fornece duas notas de 100, uma nota de 50, uma nota de
 5 e uma nota de 1;
-Exemplo 2: Para sacar a quantia de saque reais, o programa fornece três notas de 100, uma nota de 50, quatro notas
+Exemplo 2: Para sacar a quantia de 399 reais, o programa fornece três notas de 100, uma nota de 50, quatro notas
 de 10, uma nota de 5 e quatro notas de 1.
 """
 try:
@@ -19,15 +19,12 @@ else:
         print('Valor de saque inválido.')
     else:
         print('O saque será de:')
-        saque_100_int = int(saque / 100)
-        resto = saque % 100
-        saque_50_int = int(resto / 50)
-        resto %= 50
-        saque_10_int = int(resto / 10)
-        resto %= 10
-        saque_5_int = int(resto / 5)
-        resto %= 5
-        saque_1_int = int(resto)
+
+        saque_100_int, saque = divmod(saque, 100)
+        saque_100_int, saque = divmod(saque, 100)
+        saque_50_int, saque = divmod(saque, 50)
+        saque_10_int, saque = divmod(saque, 10)
+        saque_5_int, saque_1_int = divmod(saque, 5)
 
         if saque_100_int == 1:
             saque_100_str = '1 nota de 100'
