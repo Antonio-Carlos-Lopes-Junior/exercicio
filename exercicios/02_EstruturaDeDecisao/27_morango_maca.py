@@ -9,11 +9,11 @@ quantidade (em kg) de maçãs adquiridas e escreva o valor a ser pago pelo clien
 """
 morango_float = maca_float = produtos_float = desconto = 0
 try:
-    morango_float = float(input('Digite quantos kilos de morango vendido: '))
+    morango_float = float(input('Digite quantos quilos de morango vendido: '))
     if morango_float < 0:
         print('Quantidade inválida.')
     else:
-        maca_float = float(input('Digite quantos kilos de maçã vendido: '))
+        maca_float = float(input('Digite quantos quilos de maçã vendido: '))
         if maca_float < 0:
             print('Quantidade inválida.')
     morango_str = maca_str = produtos_str = ''
