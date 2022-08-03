@@ -14,3 +14,4 @@ else:
             print('Não foi digitado um número.')
 
     print(f'A nota digitada foi: {nota:.1f}')
+
