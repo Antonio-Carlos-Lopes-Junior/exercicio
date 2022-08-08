@@ -10,3 +10,4 @@ while nota < 0 or nota > 10:
         print('Não foi digitado um número.')
 
 print(f'A nota digitada foi: {nota:.1f}')
+xxx
