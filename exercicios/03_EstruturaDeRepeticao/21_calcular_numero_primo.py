@@ -9,8 +9,8 @@ while True:
     except ValueError:
         print('Digite um número')
     else:
-        if num <= 0:
-            print('Digite um número positivo.')
+        if num <= 1:
+            print('Digite um número positivo maior que 1.')
         else:
             for n in range(2, num):
                 resto = num % n
