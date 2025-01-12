@@ -24,4 +24,3 @@ while True:
                 print(f'{num} não é um número primo e é divisível por:')
                 print('1', ', '.join([str(f'{divisor}') for divisor in divisores]), sep=', ', end=f' e {num}')
             break
-final do programa
